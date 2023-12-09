@@ -47,13 +47,15 @@ strong {
 
 .text-ontop {
   font-size: 0.625rem;
+  margin-top: 0;
+  padding: 2px;
   color: #F18119;
   font-weight: 900;
   text-transform: uppercase;
   order: -1;
   letter-spacing: 1px;
   border-top: 6px solid #F18119;
-  margin-top: 0;
+  border-image: linear-gradient(to left, #FF713B, #FFA51D) 1;
 }
 
 .fine-print {
@@ -67,7 +69,8 @@ strong {
   display: flex;
   flex-direction: column;
   background-color: #404040;
-  background-image: url(../images/dark-ribs.jpg);
+  background-image: url(../images/ribs.jpg);
+  background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
   padding: 0 .5em 2em;
@@ -113,7 +116,7 @@ input {
 }
 
 input:focus {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 .btn {
@@ -136,7 +139,7 @@ input:focus {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
 /*  media queries */
