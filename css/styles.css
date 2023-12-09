@@ -103,11 +103,17 @@ input,
 
 input {
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: .75em;
   padding: 5px;
   font-family: inherit;
   border: 1px solid #404040;
   font-size: 14px;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+input:focus {
+  transform: scale(1.02);
 }
 
 .btn {
@@ -117,10 +123,21 @@ input {
   padding: 1em 1.5em;
   font-weight: 900; 
   letter-spacing: 1px;
-  font-size: 0.625rem;
+  font-size: 0.675rem;
   cursor: pointer;
 }
 
+.btn-primary {
+  background-image: linear-gradient(to left, #FF713B, #FFA51D);
+  color: #FFF;
+  transition: transform 250ms;
+  transform: scale(1);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: scale(1.02);
+}
 
 /*  media queries */
 
