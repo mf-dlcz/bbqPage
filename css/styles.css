@@ -98,20 +98,29 @@ strong {
 input,
 .btn {
   width: 100%;
+  border-radius: 5px;
+}
+
+input {
   text-align: center;
   margin-bottom: 5px;
   padding: 5px;
   font-family: inherit;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 14px;
-  border-radius: 5px;
   border: 1px solid #404040;
+  font-size: 14px;
 }
 
 .btn {
+  text-transform: uppercase;
+  border: 0;
   display: inline-block;
+  padding: 1em 1.5em;
+  font-weight: 900; 
+  letter-spacing: 1px;
+  font-size: 0.625rem;
+  cursor: pointer;
 }
+
 
 /*  media queries */
 
